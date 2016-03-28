@@ -19,7 +19,7 @@ in buildPythonPackage (args // rec {
   preBuild = ''
     echo "Creating site.cfg file..."
     cat << EOF > site.cfg
-    [openblas]
+    [atlas]
     include_dirs = ${passthru.blas}/include
     library_dirs = ${passthru.blas}/lib
     EOF

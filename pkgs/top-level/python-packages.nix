@@ -13177,7 +13177,7 @@ in modules // {
 
   buildNumpyPackage = callPackage ../development/python-modules/numpy.nix {
     gfortran = pkgs.gfortran;
-    blas = pkgs.openblasCompat_2_14;
+    blas = pkgs.atlasWithLapack;
   };
 
   numpy = self.numpy_1_11;
