@@ -1,4 +1,5 @@
-{ stdenv, fetchurl, dpkg, gettext, gawk, perl, wget, coreutils, fakeroot }:
+{ stdenv, fetchurl, dpkg, gettext, gawk, perl, wget, coreutils, fakeroot,
+  gnupg1 }:
 
 let
 # USAGE like this: debootstrap sid /tmp/target-chroot-directory
@@ -35,7 +36,7 @@ in stdenv.mkDerivation rec {
     sha256 = "06gigscd2327wsvc7n7w2m8xmaixvp4kyqhayn00qrgd9i9w34x6";
   };
 
-  buildInputs = [ dpkg gettext gawk perl ];
+  buildInputs = [ dpkg gettext gawk perl gnupg1 ];
 
   dontBuild = true;
 
