@@ -859,6 +859,7 @@ default-package-overrides:
   - hledger-iadd ==1.1.2
   - hledger-interest ==1.5.1
   - hledger-lib ==1.1
+  - hledger-web ==1.1
   - hlibgit2 ==0.18.0.15
   - hlibsass ==0.1.5.0
   - hlint ==1.9.35
